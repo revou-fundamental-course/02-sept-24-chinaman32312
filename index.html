@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Luas & Keliling Segitiga</h1>
+        <div class="image-container">
+            <img src="images/segitiga.png" alt="Triangle Diagram">
+        </div>
+        <!-- Form for Area Calculation -->
+        <div class="form-section">
+            <h2>Hitung Luas Segitiga <br>(L = 1/2 x Alas x tinggi)
+            </h2> 
+            <label for="base">Alas (Base):</label>
+            <input type="number" id="base" placeholder="Masukkan alas" required>
+            
+            <label for="height">Tinggi (Height):</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi" required>
+
+            <button id="calculateArea">Hitung Luas</button>
+            <p id="areaResult"></p>
+        </div>
+ 
+        <!-- Form for Perimeter Calculation -->
+        <div class="form-section">
+            <h2>Hitung Keliling Segitiga <br> (K = AB + BC + CA)</h2>
+            <label for="sideA">Sisi AB:</label>
+            <input type="number" id="sideA" placeholder="Masukkan sisi AB" required>
+            
+            <label for="sideB">Sisi BC:</label>
+            <input type="number" id="sideB" placeholder="Masukkan sisi BC" required>
+            
+            <label for="sideC">Sisi AC:</label>
+            <input type="number" id="sideC" placeholder="Masukkan sisi AC" required>
+
+            <button id="calculatePerimeter">Hitung Keliling</button>
+            <p id="perimeterResult"></p>
+        </div>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

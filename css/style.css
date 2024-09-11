@@ -57,19 +57,19 @@ p {
     color: #333;
 }
 .image-container {
-    text-align: center; /* Centers inline elements like images */
+    text-align: center; 
 }
 
 .triangle-img {
-    max-width: 100%; /* Ensures the image is responsive */
+    max-width: 100%;
     height: auto
-    body {
+    body; {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color{:} #f0f0f0{};
     margin: 0;
-    padding: 20px;
+    padding:[] 20px;
+    }
 }
-
 .container {
     max-width: 400px;
     margin: 0 auto;

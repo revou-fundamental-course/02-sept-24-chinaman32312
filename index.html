@@ -12,7 +12,6 @@
         <div class="image-container">
             <img src="images/segitiga.png" alt="Triangle Diagram">
         </div>
-        <!-- Form for Area Calculation -->
         <div class="form-section">
             <h2>Hitung Luas Segitiga <br>(L = 1/2 x Alas x tinggi)
             </h2> 
@@ -25,8 +24,6 @@
             <button id="calculateArea">Hitung Luas</button>
             <p id="areaResult"></p>
         </div>
- 
-        <!-- Form for Perimeter Calculation -->
         <div class="form-section">
             <h2>Hitung Keliling Segitiga <br> (K = AB + BC + CA)</h2>
             <label for="sideA">Sisi AB:</label>
@@ -44,5 +41,31 @@
         
     </div>
     <script src="js/script.js"></script>
+</body>
+</html>
+        <div class="calculator">
+            <h1>Hitung Luas & Keliling Jajar Genjang</h1>
+            <h3>Hitung Luas Jajar Genjang<br>(L = Alas x Tinggi)</h3>
+            <div class="input-group">
+                <label for="parallelogramBase">Alas (Base):</label>
+                <input type="number" id="parallelogramBase" placeholder="Masukkan panjang alas">
+            </div>
+            <div class="input-group">
+                <label for="parallelogramHeight">Tinggi (Height):</label>
+                <input type="number" id="parallelogramHeight" placeholder="Masukkan tinggi jajar genjang">
+            </div>
+            <button onclick="calculateParallelogramArea()">Hitung Luas</button>
+            <p>Luas Jajar Genjang: <span id="parallelogramArea"></span></p>
+
+            <h3>Hitung Keliling Jajar Genjang<br>(K = 2 x (Alas + Sisi Miring))</h3>
+            <div class="input-group">
+                <label for="parallelogramSide">Sisi Miring (Side):</label>
+                <input type="number" id="parallelogramSide" placeholder="Masukkan panjang sisi miring">
+            </div>
+            <button onclick="calculateParallelogramPerimeter()">Hitung Keliling</button>
+            <p>Keliling Jajar Genjang: <span id="parallelogramPerimeter"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
